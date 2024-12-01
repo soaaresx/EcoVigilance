@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+    <title>Eco Vigilance - Denúncia de Descarte Irregular</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+</head>
+<body>
+    <header>
+        <div class="container header-content">
+            <div class="logo">
+                <h1><i class="fas fa-leaf"></i> ECO VIGILANCE</h1>
+            </div>
+            <nav>
+                <ul class="nav-links">
+                    <li><a href="#inicio" class="nav-item">Início</a></li>
+                    <li><a href="#sobre" class="nav-item">Sobre</a></li>
+                    <li><a href="#denunciar" class="nav-item">Denunciar</a></li>
+                    <li><a href="#contato" class="nav-item">Contato</a></li>
+                    <li><a href="#monitoramento" class="nav-item">Monitoramento</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+    <section id="inicio" class="banner">
+        <div class="slider">
+            <div class="slide" style="background-image: linear-gradient(rgba(43, 110, 79, 0.7), rgba(0, 0, 0, 0.6)), 
+                                     url('imagens/salvador-banner1.jpg');"></div>
+            <div class="slide" style="background-image: linear-gradient(rgba(43, 110, 79, 0.7), rgba(0, 0, 0, 0.6)), 
+                                     url('imagens/salvador-banner2.jpg');"></div>
+            <div class="slide" style="background-image: linear-gradient(rgba(43, 110, 79, 0.7), rgba(0, 0, 0, 0.6)), 
+                                     url('imagens/salvador-banner3.jpg');"></div>
+        </div>
+        <div class="container banner-content">
+            <h2>Ajude a manter Salvador Limpa e Sustentável</h2>
+            <p>Denuncie descarte irregular e contribua para uma cidade mais limpa e organizada.</p>
+            <a href="#denunciar" class="btn">Denunciar Agora</a>
+        </div>
+    </section>
+    <section id="sobre" class="about">
+        <div class="container">
+            <h2>Sobre o Eco Vigilance</h2>
+            <p>O Eco Vigilance é uma plataforma desenvolvida para facilitar a denúncia de descarte ilegal de resíduos nas ruas de Salvador. Através de uma interface simples e eficiente, você pode relatar infrações, ajudando as autoridades a atuarem rapidamente. Com denúncias identificadas, garantimos transparência, responsabilidade e confiança entre os usuários e os órgãos públicos.</p>
+        </div>
+    </section>
+    <section id="denunciar" class="report-form">
+        <div class="container">
+            <h2>Denuncie Aqui</h2>
+            <form action="success.html" method="GET" role="form" aria-label="Formulário de denúncia">
+                <label for="name">Nome Completo:</label>
+                <input type="text" id="name" name="name" placeholder="Digite seu nome completo" required>
+                
+                <label for="email">E-mail:</label>
+                <input type="email" id="email" name="email" placeholder="Digite seu e-mail" required>
+                
+                <label for="location">Localização do Descarte Irregular:</label>
+                <input type="text" id="location" name="location" placeholder="Informe o bairro" required>
+                
+                <label for="description" class="description">Descrição do Problema:</label>
+                <textarea id="description" name="description" placeholder="Descreva o problema" rows="4" required></textarea>
+                
+                <label for="files">Anexar Fotos/Vídeos:</label>
+                <div class="file-upload">
+                    <label for="files" class="file-upload-label">
+                        <input type="file" id="files" name="files" multiple accept="image/*,video/*">
+                        <i class="fas fa-cloud-upload-alt"></i>
+                        <span>Arraste arquivos ou clique para selecionar</span>
+                        <small>Formatos aceitos: jpg, png, mp4, mov (Máx: 1GB)</small>
+                    </label>
+                    <div id="file-preview" class="file-preview"></div>
+                </div>
+                
+                <input type="submit" value="Enviar Denúncia" class="btn">
+            </form>
+        </div>
+    </section>
+    <section id="contato" class="contact">
+        <div class="container">
+            <h2>Contato</h2>
+            <p>Se tiver dúvidas ou precisar de mais informações, entre em contato conosco:</p>
+            <ul>
+                <li>Email: <span>contatoecovigilance@gmail.com</span></li>
+                <li>Telefone: <span>(71) 3202-6000</span></li>
+            </ul>
+        </div>
+    </section>
+    <section id="monitoramento" class="dashboard-section">
+        <div class="container">
+            <h2>Monitoramento de Denúncias</h2>
+            <iframe 
+                src="http://localhost:8501"
+                width="100%" 
+                height="800px" 
+                frameborder="0"
+                allow="camera;microphone"
+                style="border: none; border-radius: 8px; box-shadow: 0 2px 10px rgba(0,0,0,0.1);">
+            </iframe>
+        </div>
+    </section>
+    <footer>
+        <div class="container footer-content">
+            <div class="footer-section">
+                <h3>Eco Vigilance</h3>
+                <p>Juntos por uma Salvador mais limpa e sustentável.</p>
+            </div>
+            <div class="footer-section">
+                <h3>Links Rápidos</h3>
+                <ul>
+                    <li><a href="#inicio">Início</a></li>
+                    <li><a href="#sobre">Sobre</a></li>
+                    <li><a href="#denunciar">Denunciar</a></li>
+                    <li><a href="#contato">Contato</a></li>
+                </ul>
+            </div>
+            <div class="footer-section">
+                <h3>Contato</h3>
+                <ul class="contact-info">
+                    <li><i class="fas fa-envelope"></i> <span>contatoecovigilance@gmail.com</span></li>
+                    <li><i class="fas fa-phone"></i> <span>(71) 3202-6000</span></li>
+                    <li><i class="fas fa-map-marker-alt"></i> <span>Salvador, Bahia</span></li>
+                </ul>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <div class="container">
+                <p>&copy; 2024 Eco Vigilance. Todos os direitos reservados.</p>
+            </div>
+        </div>
+    </footer>
+    <script src="script.js"></script>
+</body>
+</html> 
