@@ -1,9 +1,11 @@
 import streamlit as st
 import pandas as pd
 import plotly.express as px
+import os
 
-#carregar os dados
-DATA_PATH = "denuncia.json"
+# Ajuste o caminho do arquivo para ser relativo
+DATA_PATH = os.path.join(os.path.dirname(__file__), "denuncia.json")
+
 @st.cache_data
 def load_data(file_path):
     return pd.read_json(file_path)
