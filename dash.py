@@ -9,6 +9,7 @@ DATA_PATH = os.path.join(os.path.dirname(__file__), "denuncia.json")
 @st.cache_data
 def load_data(file_path):
     return pd.read_json(file_path)
+
 data = load_data(DATA_PATH)
 
 st.title("Dashboard EcoVigilance")
