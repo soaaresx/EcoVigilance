@@ -951,6 +951,7 @@ html {
     box-shadow: 0 0 0 3px rgba(43, 110, 79, 0.1);
 }
 
+/* Indicador de scroll */
 .scroll-indicator {
     display: none;
 }
