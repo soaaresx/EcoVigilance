@@ -1,8 +1,3 @@
-/* 
-   Usei bastante o Flexbox e Grid pra deixar tudo responsivo!
-*/
-
-/* Zerando tudo pra não dar bug */
 * {
     margin: 0;
     padding: 0;
@@ -10,7 +5,6 @@
     caret-color: transparent;
 }
 
-/* Config básica da página */
 body {
     font-family: 'Montserrat', sans-serif;
     line-height: 1.6;
@@ -37,7 +31,6 @@ h2 {
     width: 100%;
 }
 
-/* Menu fixo no topo */
 header {
     background-color: #2b6e4f;
     padding: 15px 0;
@@ -121,7 +114,6 @@ header {
     color: #4CAF50;
 }
 
-/* Slider com as fotos de Salvador */
 .banner {
     position: relative;
     height: 70vh;
@@ -197,7 +189,6 @@ header {
     color: #ffffff;
 }
 
-/* Botão estilizado */
 .btn {
     display: inline-block;
     background-color: #2b6e4f;
@@ -233,7 +224,6 @@ header {
     background-color: #1e4b38;
 }
 
-/* Seção Sobre */
 .about {
     background-color: #e8f5e9;
     padding: 60px 0;
@@ -256,7 +246,6 @@ header {
     line-height: 1.8;
 }
 
-/* Formulário de denúncia */
 .report-form {
     padding: 60px 0;
     background-color: #f1f8f2;
@@ -329,7 +318,6 @@ header {
     background-color: #225540;
 }
 
-/* Seção de sucesso */
 .success {
     min-height: calc(100vh - 300px);
     display: flex;
@@ -383,7 +371,6 @@ header {
     margin-top: 20px;
 }
 
-/* Seção de contato */
 .contact {
     background-color: #e8f5e9;
     padding: 40px 0;
@@ -401,7 +388,6 @@ header {
     color: #555;
 }
 
-/* Rodapé organizado em grid */
 footer {
     background-color: #2b6e4f;
     color: white;
@@ -476,7 +462,6 @@ footer {
     font-size: 0.9em;
 }
 
-/* Responsividade */
 @media (max-width: 768px) {
     .header-content {
         flex-direction: row;
@@ -656,7 +641,6 @@ footer {
     }
 }
 
-/* Tirei a barra de rolagem */
 ::-webkit-scrollbar {
     display: none;
 }
@@ -666,25 +650,21 @@ footer {
     scrollbar-width: none;
 }
 
-/* Remover pontos de todas as listas */
 ul {
     list-style: none;
 }
 
-/* Especificamente para a lista de contato */
 .contact ul {
     list-style: none;
     padding: 0;
     margin: 15px 0;
 }
 
-/* Já temos isso no footer, mas vou manter para garantir */
 .footer-section ul {
     list-style: none;
     padding: 0;
 }
 
-/* Ajustes no slider */
 .slider {
     position: absolute;
     top: 0;
@@ -693,7 +673,6 @@ ul {
     height: 100%;
 }
 
-/* Botões de navegação */
 .slider-btn {
     position: absolute;
     top: 50%;
@@ -720,7 +699,6 @@ ul {
     background: rgba(0, 0, 0, 0.8);
 }
 
-/* Indicadores (bolinhas) */
 .slider-dots {
     position: absolute;
     bottom: 20px;
@@ -744,25 +722,23 @@ ul {
     background: white;
 }
 
-/* Adicione isso nas configurações básicas do site */
 html {
-    scroll-behavior: smooth; /* Isso fará o scroll suave */
-    scroll-padding-top: 70px; /* Isso compensa o header fixo */
+    scroll-behavior: smooth;
+    scroll-padding-top: 70px;
 }
 
 @media (max-width: 768px) {
     html {
-        scroll-padding-top: 90px; /* Ajuste para telas menores */
+        scroll-padding-top: 90px;
     }
 }
 
 @media (max-width: 480px) {
     html {
-        scroll-padding-top: 100px; /* Ajuste para telas ainda menores */
+        scroll-padding-top: 100px;
     }
 }
 
-/* Permitir seleção de texto nas informações de contato */
 .contact ul li,
 .contact-info li {
     user-select: text !important;
@@ -772,7 +748,6 @@ html {
     cursor: text;
 }
 
-/* Permitir seleção específica do email e telefone */
 .contact ul li span,
 .contact-info li span {
     user-select: all !important;
@@ -782,12 +757,10 @@ html {
     cursor: text;
 }
 
-/* Adicione transição suave para a mudança de tema */
 * {
     transition: background-color 0.3s ease, color 0.3s ease;
 }
 
-/* Estilo para o upload de arquivos */
 .file-upload {
     border: 2px dashed #2b6e4f;
     border-radius: 8px;
@@ -832,12 +805,10 @@ html {
     font-size: 0.9em;
 }
 
-/* Adicione esta linha no estilo do upload de arquivos */
 .file-upload input[type="file"] {
     display: none;
 }
 
-/* Adicione estes estilos para o preview */
 .file-preview {
     display: grid;
     grid-template-columns: repeat(auto-fill, minmax(120px, 1fr));
@@ -855,7 +826,6 @@ html {
     box-shadow: 0 2px 6px rgba(0,0,0,0.1);
 }
 
-/* Ajuste nas seções principais */
 #inicio {
     min-height: 100vh;
     margin-bottom: 0;
@@ -921,7 +891,6 @@ html {
     display: none;
 }
 
-/* Ajuste no container para centralizar conteúdo */
 .container {
     max-width: 1200px;
     margin: 0 auto;
@@ -929,7 +898,6 @@ html {
     width: 100%;
 }
 
-/* Ajuste na responsividade */
 @media (max-width: 768px) {
     #sobre, #denunciar, #contato {
         padding: 60px 0;
@@ -942,7 +910,6 @@ html {
     }
 }
 
-/* Melhorias visuais nas seões */
 .about p {
     font-size: 1.2em;
     line-height: 1.8;
@@ -984,74 +951,66 @@ html {
     box-shadow: 0 0 0 3px rgba(43, 110, 79, 0.1);
 }
 
-/* Indicador de scroll */
 .scroll-indicator {
     display: none;
 }
 
-/* Ajuste no zoom geral */
 html {
-    font-size: 15px; /* Reduzido de 16px (padrão) */
+    font-size: 15px;
 }
 
-/* Manter seção Sobre em destaque */
 #sobre {
-    padding: 80px 0; /* Mantém espaçamento maior */
+    padding: 80px 0;
 }
 
 #sobre h2 {
-    font-size: 2.8em; /* Aumentado */
+    font-size: 2.8em;
 }
 
 #sobre p {
-    font-size: 1.3em; /* Aumentado */
+    font-size: 1.3em;
 }
 
-/* Reduzir seção de contatos */
 #contato {
-    padding: 30px 0; /* Reduzido de 60px */
-    min-height: auto; /* Remove altura mínima */
+    padding: 30px 0;
+    min-height: auto;
 }
 
 .contact h2 {
-    font-size: 1.8em; /* Reduzido */
+    font-size: 1.8em;
     margin-bottom: 10px;
 }
 
 .contact p {
-    font-size: 1em; /* Reduzido */
+    font-size: 1em;
     margin-bottom: 15px;
 }
 
 .contact ul {
-    margin: 10px 0; /* Reduzido */
+    margin: 10px 0;
 }
 
 .contact ul li {
-    font-size: 0.95em; /* Reduzido */
+    font-size: 0.95em;
     margin-bottom: 8px;
 }
 
-/* Ajuste nos espaçamentos gerais */
 .container {
-    padding: 15px; /* Reduzido de 20px */
+    padding: 15px;
 }
 
 .section-divider {
-    margin: 20px 0; /* Reduzido de 30px */
+    margin: 20px 0;
 }
 
-/* Remover os divisores */
 .section-divider {
     display: none;
 }
 
-/* Ajustar espaçamentos entre seções */
 #inicio, #sobre, #denunciar, #contato {
     margin: 0;
 }
 
-/* Garantir que todos os textos usem a mesma fonte */
 * {
     font-family: 'Montserrat', sans-serif;
 }
