@@ -73,7 +73,7 @@ streamlit run dash.py
 ## 📝 Notas de Execução
 
 - Para acessar o projeto:
-  - Para acessar o site completo: https://soaaresx.github.io/EcoVigilance/
+  - Para acessar o site completo: https://soaaresx.github.io/EcoVigilance/ (é necessário executar o dashboard localmente)
 
   - Se for executar localmente: 
     - Site principal: use Live Server (http://localhost:5500) e Executar `streamlit run dash.py` para funcionamento do dashboard.
